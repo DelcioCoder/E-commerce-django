@@ -1,0 +1,70 @@
+{% extends 'store/main.html' %}
+{% load static %}
+
+
+{% block content %}
+<div class="row">
+
+    <div class="col-lg-6">
+
+        <div class="box-element" id="form-wrapper">
+
+            <form id="form">
+                <div id="user-info">
+                    <div class="form-field">
+                        <input class="form-control" type="text" id="name" name="name" placeholder="Name...">
+                    </div>
+
+                    <div class="form-field">
+                        <input class="form-control" type="email" id="email" name="email" placeholder="Email..."> 
+                    </div>
+                </div>
+
+                  <h6>shipping info</h6>
+
+                <div id="shipping-info">
+
+                    <div class="form-field">
+                        <input class="form-control" type="text" id="address" name="address" placeholder="Address...">
+                    </div>
+
+                    <div class="form-field">
+                        <input class="form-control" type="text" id="city" name="city" placeholder="city...">
+                    </div>
+
+                    <div class="form-field">
+                        <input class="form-control" type="text" id="state" name="state" placeholder="state...">
+                    </div>
+                </div>
+                <a class="btn btn-success btn-block" href="#">continue</a>
+            </form>
+        </div>
+
+    </div>
+
+
+
+    <div class="col-lg-6">
+
+
+        <div class="box-element" id="form-wrapper">
+            <a class="btn btn-outline-dark" href="{% url 'store:cart' %}">&#x2190;Back to cart</a>
+            <hr>
+            <h6>Order summary</h6>
+
+            <div class="cart-row">
+                <div style="flex: 2;"><img class="cart-image" src="{% static 'images/placeholder.png' %}" alt="cart image"></div>
+                <div style="flex: 2;"> <strong> product 1</strong></div>
+                <div style="flex: 1;"> <strong>$60</strong> </div>
+                <div style="flex: 1;"> <strong>x2</strong> </div>
+            </div>
+
+            <h5><strong>items:</strong></h5>
+            <h5><strong>Total: $599</strong></h5>
+
+        </div>
+
+
+    </div>
+</div>
+{% endblock content %}

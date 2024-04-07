@@ -1,0 +1,43 @@
+{% extends 'store/main.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+
+{% block content %}
+
+<div class="row">
+
+    <div class="col-lg-4">
+        <img class="thumbnail" src="{% static 'images/placeholder.png' %}" alt="placeholder">
+
+        <div class="box-element">
+            <button class="btn btn-outline-secondary add-btn">Add to cart</button>
+            <a class="btn btn-success" href="#">view</a>
+            <h5 style="float: right;margin-left: 5px;">$20</h5>
+        </div>
+    </div>
+
+
+    <div class="col-lg-4">
+        <img class="thumbnail" src="{% static 'images/placeholder.png' %}" alt="placeholder">
+
+        <div class="box-element">
+            <button class="btn btn-outline-secondary add-btn">Add to cart</button>
+            <a class="btn btn-success" href="#">view</a>
+            <h5 style="float: right;margin-left: 5px;">$49</h5>
+        </div>
+    </div>
+
+
+    <div class="col-lg-4">
+        <img class="thumbnail" src="{% static 'images/placeholder.png' %}" alt="placeholder">
+
+        <div class="box-element">
+            <button class="btn btn-outline-secondary add-btn">Add to cart</button>
+            <a class="btn btn-success" href="#">view</a>
+            <h5 style="float: right;margin-left: 5px;">$59</h5>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
